@@ -28,5 +28,6 @@ if [ "$STATUS" = "active" ]; then
 
 # Se o serviço estiver parado
 elif [ "$STATUS" = "inactive" ]; then
-    ./start-jboss.sh >> /home/vagrant/tomcat/log/inativo/log.txt
+    echo "$(timestamp) |  Serviço $((NOME_SERVICO)) INATIVO." 
+    ./start-jboss.sh >> /home/vagrant/jboss/log/inativo/log.txt
 fi

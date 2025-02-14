@@ -14,7 +14,7 @@ HORA=$(((SEGUNDOS_PARADO % 86400) / 3600))
 MIN=$(((SEGUNDOS_PARADO % 3600) / 60))  
 SEG=$((SEGUNDOS_PARADO % 60))
 
-echo "$(timestamp) | O serviço $NOME_SERVICO está PARADO."
+echo "$(timestamp) | O serviço $NOME_SERVICO está INATIVO."
 echo "$(timestamp) | Tempo de INATIVIDADE: $((DIA)) d  $((HORA)) h  $((MIN)) min $((SEG)) seg."
 
 if [ "$SEGUNDOS_PARADO" -gt 60 ]; then

@@ -15,7 +15,7 @@ HORA=$((TEMPO_PARADO / 3600))
 MIN=$(((TEMPO_PARADO % 3600)/60))
 SEG=$((TEMPO_PARADO % 60))
 
-echo "$(timestamp) | A instância está INATIVA"
+echo "$(timestamp) | A instância $NOME_DO_CONTAINER está INATIVA"
 echo "$(timestamp) | Tempo de inatividade: $((HORA)) h   $((MIN)) min $((SEG)) seg."
 if [ $TEMPO_PARADO -gt 60 ]; then
   docker start $NOME_DO_CONTEINER
