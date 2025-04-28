@@ -1,6 +1,8 @@
-# Estágio em Infraestrutura - Atividade Técnica
+# Infraestrutura - Atividade Técnica
 
-Este repositório contém os scripts e documentação necessários para a realização da atividade técnica proposta para a vaga de estágio em infraestrutura no ESIG Group. A atividade consiste em criar scripts para realizar o dump e restore de um banco de dados PostgreSQL, além de verificar o status das instâncias do JBoss e Tomcat.
+Este repositório contém os scripts e documentação necessários para a realização da atividade técnica que consiste em criar scripts para instalar e realizar o dump e restore de um banco de dados PostgreSQL, além de instalar e verificar o status das instâncias do JBoss e Tomcat.
+Também é feito a automação para que, caso a instância esteja parada por mais de 1 minuto, ela seja inicializada automaticamente.
+Também foi feito o monitoramento dos logs de todas as instâncias via Grafana Loki.
 
 ### OBSERVAÇÃO
 - Este respositório instala todas as aplicações e dependências necessárias para que os scripts possam ser executados seguindo este README. Caso você queira verificar o passo a passo da instalação das dependencias e das aplicações, [clique aqui](https://github.com/FllavioAndrade/estagio-esig/tree/master).
